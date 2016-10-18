@@ -13,6 +13,6 @@ public class Ejercicio04 {
       System.out.printf("Vas a cobrar %.2f euros", horasTrabajadas*12);
     } else {
         System.out.printf("Vas a cobrar %.2f euros", (horasTrabajadas-40)*16+horasTrabajadas*12);
-      }
+    }
   }
 }

@@ -11,7 +11,11 @@ public class Ejercicio05 {
     System.out.print("Introduce b: ");
     double b = Double.parseDouble(System.console().readLine());
     
-    System.out.println(a + "x + " + b + " = 0");
-    System.out.print("x = " + a/(-b));
+    if (a == 0) {
+      System.out.println("No tiene solución real.");
+    } else {
+      System.out.println(a + "x + " + b + " = 0");
+      System.out.print("x = " + a/(-b));
+    }
   }
 }

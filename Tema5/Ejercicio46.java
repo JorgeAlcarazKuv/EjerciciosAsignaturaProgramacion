@@ -27,7 +27,7 @@ public class Ejercicio46 {
             if (z==1 || z==anchura) {
               System.out.print("* ");
             } else {
-            System.out.print("  ");
+              System.out.print("  ");
             }
           }
         }

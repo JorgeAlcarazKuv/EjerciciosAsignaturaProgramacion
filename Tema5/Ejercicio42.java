@@ -14,7 +14,7 @@ public class Ejercicio42 {
     Scanner s = new Scanner(System.in);
     System.out.print("Introduce un número entero: ");
     int numero = Integer.parseInt(s.next());
-    boolean esPrimo=true;
+  /*boolean esPrimo=true;                      ////////Sin funciones
     int i=2;
     for (int j=numero; j<numero+5; j++) {
       esPrimo=true; //Reinicio
@@ -31,5 +31,23 @@ public class Ejercicio42 {
         System.out.println(j + " No es primo.");
       }
     }
+  }*/
+    for (int j=numero; j<numero+5; j++) {             /// Usando funciones ///
+      if (esPrimo(j)) {
+        System.out.println(j + " Sí es primo.");
+      } else {
+        System.out.println(j + " No es primo.");
+      }
+    }
+  }
+  ////////////////////Funciones////////////////////////
+  
+  public static boolean esPrimo(int num) {
+    for (int i=2; i <= num-1; i++) {
+      if ((num%i) == 0) {
+        return false;
+      }
+    }
+  return true;
   }
 }

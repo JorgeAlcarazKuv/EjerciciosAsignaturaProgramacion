@@ -11,7 +11,7 @@ public class Ahorcado {
     int aciertos=0;
     String frase="";
     int intentos = 6;
-//////////////////////////
+/////////////////////////////////////////////
     do {
       Limpiar();
       pintarMonigote(intentos);
@@ -72,7 +72,7 @@ public class Ahorcado {
       System.out.println("Has ganado! La solución era: " + frase);
     }
   }
-/////////////////////////////////////////////////
+///////////////////////////////////////////////
   private static void Limpiar() {
     for (int i=0; i<=50; i++) {
       System.out.println();

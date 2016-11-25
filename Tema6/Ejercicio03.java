@@ -1,41 +1,41 @@
 import java.util.Scanner;
 /*
  * @author Jorge Alcaraz Bravo
- * Tema 6 Ejercicio 02
+ * Tema 6 Ejercicio 03
  * 
 */
-public class Ejercicio02 {
+public class Ejercicio03 {
   public static void main (String[] args) {
     String palo="";
     String carta="";
     int numPalo=(int)(Math.random()*4)+1;
-    int numCarta=(int)(Math.random()*13)+1;
+    int numCarta=(int)(Math.random()*10)+1;
     switch(numPalo) {
       case 1:
-        palo= "Picas";
+        palo= "Oros";
         break;
       case 2:
-        palo= "Corazones";
+        palo= "Bastos";
         break;
       case 3:
-        palo= "Diamantes";
+        palo= "Espadas";
         break;
       case 4:
-        palo= "Tréboles";
+        palo= "Copas";
         break;
     }
     switch(numCarta) {
       case 1:
-        carta="A";
+        carta="AS";
         break;
-      case 11:
-        carta="J";
+      case 8:
+        carta="Sota";
         break;
-      case 12:
-        carta="Q";
+      case 9:
+        carta="Caballo";
         break;
-      case 13:
-        carta="K";
+      case 10:
+        carta="Rey";
         break;
       default:
         carta=String.valueOf(numCarta);

@@ -1,4 +1,3 @@
-import java.util.Scanner;
 /*
  * @author Jorge Alcaraz Bravo
  * Tema 6 Ejercicio 04

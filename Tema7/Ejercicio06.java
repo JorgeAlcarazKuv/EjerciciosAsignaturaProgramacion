@@ -22,7 +22,6 @@ public class Ejercicio06 {
       aux = num[i+1];
       num[i+1] = aux2;
       }
-
     }
     for(int i=0; i < num.length; i++) {
       System.out.print(num[i] + " ");

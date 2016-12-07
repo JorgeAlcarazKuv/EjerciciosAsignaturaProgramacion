@@ -16,7 +16,7 @@ public class Ejercicio15 {
     // Bucle principal
     while (ocupantes != 0) {
       //preguntar número de clientes
-      System.out.println("¿Cuántos son? (Introduzca 0 para salir):");
+      System.out.print("¿Cuántos son? (Introduzca 0 para salir): ");
       ocupantes = teclado.nextInt();
       if (ocupantes >= 1 && ocupantes <= 4) {
         acoplada=false;
@@ -41,15 +41,17 @@ public class Ejercicio15 {
           }
         }
       } else if (ocupantes > 4) { // Si el grupo es mayor de 4
-        System.out.println("Haced otros grupos.");
+        System.out.println("Haced grupos de 4 máximo.");
       }
       System.out.println("┌────────────┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐");
       System.out.println("| Mesas:     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10|");
+      System.out.println("├────────────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤");
       System.out.print("| Ocupantes: | ");
       for (int i=0; i < 10; i++) { //Imprimimos las mesas
         System.out.print(mesa[i] + " | ");
       }
       System.out.println();
+      System.out.println("└────────────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘");
     }
   }
 }

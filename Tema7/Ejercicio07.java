@@ -25,7 +25,7 @@ public class Ejercicio07 {
     }
     for (int i=0; i<num.length; i++) {
       if (num[i] == valorNuevo) {
-        System.out.print(valorNuevo + " ");
+        System.out.print("*" + valorNuevo + "* ");
       } else {
         System.out.print(num[i] + " ");
       }

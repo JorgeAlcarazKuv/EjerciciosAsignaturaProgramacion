@@ -24,7 +24,7 @@ public class Ejercicio10 {
     int aux = 0;
     int i=0;
     while (i < numPares) { // Repetimos el algoritmo numPares veces
-      // Si es impar el número, lo guarda en aux, rota a la izq los siguientes números, y pone aux al final
+      // Si es impar el número, lo guarda en aux, rota a la izq los siguientes números, y pone aux en última posición
       if (num[i]%2 != 0) {
         aux = num[i];
         for (int j =   i; j < num.length-1; j++) {

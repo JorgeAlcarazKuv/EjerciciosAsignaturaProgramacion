@@ -1,5 +1,5 @@
 /**
- * Tema 7 Parte 2. Ejercicio 05
+ * Tema 7 Parte 2. Ejercicio 06
  * @author Jorge Alcaraz
  */
 public class Ejercicio06 {

@@ -1,4 +1,4 @@
-//package librerias;
+package librerias;
 import java.util.Scanner;
 /*
  * @author Jorge Alcaraz Bravo
@@ -6,13 +6,13 @@ import java.util.Scanner;
  * 
 */ 
 public class Ejercicios01a14 {
-/*  public static void main(String[] args) {
+  /*public static void main(String[] args) {
   Scanner t = new Scanner(System.in);
   //int p=t.nextInt();
-  System.out.println(posicionDeDigito(123456, 4));
+  System.out.println(juntaNumeros(3284, 2938));
   System.out.println("hola");
-  }*/
-  
+  }
+*/
   
   public static boolean esCapicua (int x) {
     return (x == voltea(x));
@@ -72,6 +72,29 @@ public class Ejercicios01a14 {
       i++;
     }
     return i;
+  }
+  public static int quitaPorDetras (int n, int quitaDigitos) {
+    for (int i = 0; i < quitaDigitos; i++) {
+      n = n/10;
+    }
+    return n;
+  }
+  public static int quitaPorDelante (int n, int quitaDigitos) {
+    n = voltea(n);
+    n = quitaPorDetras(n, quitaDigitos);
+    n = voltea(n);
+    return n;
+  }
+  public static int trozoDeNumero (int n, int inicial, int fin) {
+    int numDigitos = digitos(n);
+    n = quitaPorDetras(n, numDigitos-fin-1);
+    n = quitaPorDelante(n, inicial);
+    return n;
+  }
+  public static long juntaNumeros (int n1, int n2) {
+    int numDigitos = digitos(n2);
+    long num = potencia(10, numDigitos);
+    return n1*num+n2;
   }
 }
 

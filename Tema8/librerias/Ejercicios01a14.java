@@ -9,8 +9,7 @@ public class Ejercicios01a14 {
   /*public static void main(String[] args) {
   Scanner t = new Scanner(System.in);
   //int p=t.nextInt();
-  System.out.println(juntaNumeros(3284, 2938));
-  System.out.println("hola");
+  System.out.println(voltea(1230));
   }
 */
   
@@ -18,11 +17,14 @@ public class Ejercicios01a14 {
     return (x == voltea(x));
   }
   public static int voltea(int x) {
-    int numVolteado=0;
+    int numVolteado=1;
+    int i=0;
     while (x>=1) {
       numVolteado = numVolteado*10 + x%10;
       x = x/10;
+      i++;
     }
+    numVolteado = numVolteado-potencia(10,i);
     return numVolteado;
   }
   public static boolean esPrimo (int x) {
@@ -39,8 +41,8 @@ public class Ejercicios01a14 {
     }
     return i;
   }
-  public static long potencia(int base, int exponente) {
-    long resultado=1;
+  public static int potencia(int base, int exponente) {
+    int resultado=1;
     for(int i=0; i < exponente;i++) {
       resultado = resultado*base;
     }
